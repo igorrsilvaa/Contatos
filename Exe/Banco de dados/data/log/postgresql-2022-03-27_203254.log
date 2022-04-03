@@ -1,0 +1,7 @@
+2022-03-27 20:32:55.022 -03 [8012] LOG:  database system was shut down at 2022-03-27 20:32:32 -03
+2022-03-27 20:32:55.045 -03 [14068] LOG:  database system is ready to accept connections
+2022-03-27 20:34:13.504 -03 [14068] LOG:  received fast shutdown request
+2022-03-27 20:34:13.573 -03 [14068] LOG:  aborting any active transactions
+2022-03-27 20:34:13.577 -03 [14068] LOG:  worker process: logical replication launcher (PID 5604) exited with exit code 1
+2022-03-27 20:34:13.578 -03 [1832] LOG:  shutting down
+2022-03-27 20:34:14.130 -03 [14068] LOG:  database system is shut down
