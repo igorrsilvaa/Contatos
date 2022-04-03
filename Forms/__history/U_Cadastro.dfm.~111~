@@ -193,7 +193,6 @@ object Frm_cadastro: TFrm_cadastro
     Width = 91
     Height = 14
     Caption = 'Data Cadastro'
-    FocusControl = DBE_Dat_Cadastro
     Font.Charset = DEFAULT_CHARSET
     Font.Color = 8125008
     Font.Height = -12
@@ -203,7 +202,7 @@ object Frm_cadastro: TFrm_cadastro
   end
   object Panel3: TPanel
     Left = 0
-    Top = 544
+    Top = 550
     Width = 1071
     Height = 66
     Align = alBottom
@@ -212,7 +211,7 @@ object Frm_cadastro: TFrm_cadastro
     Color = 3549736
     ParentBiDiMode = False
     ParentBackground = False
-    TabOrder = 21
+    TabOrder = 20
   end
   object Panel1: TPanel
     Left = 0
@@ -227,9 +226,9 @@ object Frm_cadastro: TFrm_cadastro
   end
   object Panel2: TPanel
     Left = 0
-    Top = 610
+    Top = 616
     Width = 1071
-    Height = 87
+    Height = 81
     Align = alBottom
     Color = 3549736
     ParentBackground = False
@@ -433,26 +432,9 @@ object Frm_cadastro: TFrm_cadastro
     ParentFont = False
     TabOrder = 12
   end
-  object DBE_Dat_Cadastro: TDBEdit
-    AlignWithMargins = True
-    Left = 168
-    Top = 418
-    Width = 110
-    Height = 21
-    CharCase = ecUpperCase
-    DataField = 'data_cadastro'
-    DataSource = Ds_contato
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -11
-    Font.Name = 'Consolas'
-    Font.Style = []
-    ParentFont = False
-    TabOrder = 13
-  end
   object Bt_novo: TBitBtn
     Left = 142
-    Top = 565
+    Top = 571
     Width = 100
     Height = 25
     Cursor = crHandPoint
@@ -490,12 +472,12 @@ object Frm_cadastro: TFrm_cadastro
       6CFF00FFFF00FFFF00FFFF00FF0C8CC70C8CC70C8CC7838E87838F88848F888E
       725DBA8260CA8C69D0916CA56B5FFF00FFFF00FFFF00FFFF00FF}
     ParentFont = False
-    TabOrder = 14
+    TabOrder = 13
     OnClick = Bt_novoClick
   end
   object Bt_editar: TBitBtn
     Left = 248
-    Top = 565
+    Top = 571
     Width = 100
     Height = 25
     Cursor = crHandPoint
@@ -533,12 +515,12 @@ object Frm_cadastro: TFrm_cadastro
       BF2F45ED1031D3010A95E7AB79D1926DD1926DD1926DD1926DD1926DD1926DD1
       926DD1926DA56B5FFF00FFFF00FFFF00FF2732D00C19B4FF00FF}
     ParentFont = False
-    TabOrder = 15
+    TabOrder = 14
     OnClick = Bt_editarClick
   end
   object Bt_deletar: TBitBtn
     Left = 672
-    Top = 565
+    Top = 571
     Width = 100
     Height = 25
     Cursor = crHandPoint
@@ -576,12 +558,12 @@ object Frm_cadastro: TFrm_cadastro
       9FFBCB9BFBCB9BFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF
       00FFFF00FFFF00FFFF00FFFBCE9FFBCE9FFBCE9FFF00FFFF00FF}
     ParentFont = False
-    TabOrder = 16
+    TabOrder = 15
     OnClick = Bt_deletarClick
   end
   object Bt_gravar: TBitBtn
     Left = 460
-    Top = 565
+    Top = 571
     Width = 100
     Height = 25
     Cursor = crHandPoint
@@ -619,12 +601,12 @@ object Frm_cadastro: TFrm_cadastro
       FFA42626A42626FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF
       00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF}
     ParentFont = False
-    TabOrder = 17
+    TabOrder = 16
     OnClick = Bt_gravarClick
   end
   object Bt_cancelar: TBitBtn
     Left = 354
-    Top = 565
+    Top = 571
     Width = 100
     Height = 25
     Cursor = crHandPoint
@@ -662,12 +644,12 @@ object Frm_cadastro: TFrm_cadastro
       FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF
       00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF}
     ParentFont = False
-    TabOrder = 18
+    TabOrder = 17
     OnClick = Bt_cancelarClick
   end
   object Bt_atualizar: TBitBtn
     Left = 566
-    Top = 565
+    Top = 571
     Width = 100
     Height = 25
     Cursor = crHandPoint
@@ -705,12 +687,12 @@ object Frm_cadastro: TFrm_cadastro
       FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF
       00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF}
     ParentFont = False
-    TabOrder = 19
+    TabOrder = 18
     OnClick = Bt_atualizarClick
   end
   object Bt_sair: TBitBtn
     Left = 778
-    Top = 565
+    Top = 571
     Width = 100
     Height = 25
     Cursor = crHandPoint
@@ -748,12 +730,21 @@ object Frm_cadastro: TFrm_cadastro
       CA1693CA1693CAFF00FFFF00FFFF00FF1693CA1693CA1693CA1693CA1693CAFF
       00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF}
     ParentFont = False
-    TabOrder = 20
+    TabOrder = 19
     OnClick = Bt_sairClick
+  end
+  object Dt_dataCadastro: TDateTimePicker
+    Left = 168
+    Top = 422
+    Width = 110
+    Height = 21
+    Date = 44652.000000000000000000
+    Time = 0.690644629627058700
+    TabOrder = 21
   end
   object Conexao: TFDConnection
     Params.Strings = (
-      'Database=Contatos'
+      'Database=Contato'
       'User_Name=postgres'
       'Password=36217900'
       'Server=127.0.0.1'
@@ -764,9 +755,10 @@ object Frm_cadastro: TFrm_cadastro
     Top = 16
   end
   object Q_contato: TFDQuery
+    BeforePost = Q_contatoBeforePost
     Connection = Conexao
     SQL.Strings = (
-      'SELECT * FROM contato')
+      'SELECT * FROM clientes')
     Left = 568
     Top = 16
     object Q_contatoid_contato: TIntegerField
@@ -830,7 +822,6 @@ object Frm_cadastro: TFrm_cadastro
     object Q_contatodata_cadastro: TDateField
       FieldName = 'data_cadastro'
       Origin = 'data_cadastro'
-      EditMask = '!99/99/00;0;_'
     end
   end
   object Ds_contato: TDataSource

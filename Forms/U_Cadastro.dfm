@@ -476,7 +476,7 @@ object Frm_cadastro: TFrm_cadastro
     OnClick = Bt_novoClick
   end
   object Bt_editar: TBitBtn
-    Left = 248
+    Left = 354
     Top = 571
     Width = 100
     Height = 25
@@ -562,7 +562,7 @@ object Frm_cadastro: TFrm_cadastro
     OnClick = Bt_deletarClick
   end
   object Bt_gravar: TBitBtn
-    Left = 460
+    Left = 248
     Top = 571
     Width = 100
     Height = 25
@@ -605,7 +605,7 @@ object Frm_cadastro: TFrm_cadastro
     OnClick = Bt_gravarClick
   end
   object Bt_cancelar: TBitBtn
-    Left = 354
+    Left = 460
     Top = 571
     Width = 100
     Height = 25
@@ -744,7 +744,7 @@ object Frm_cadastro: TFrm_cadastro
   end
   object Conexao: TFDConnection
     Params.Strings = (
-      'Database=Contatos'
+      'Database=Contato'
       'User_Name=postgres'
       'Password=36217900'
       'Server=127.0.0.1'
@@ -758,7 +758,7 @@ object Frm_cadastro: TFrm_cadastro
     BeforePost = Q_contatoBeforePost
     Connection = Conexao
     SQL.Strings = (
-      'SELECT * FROM contato')
+      'SELECT * FROM clientes')
     Left = 568
     Top = 16
     object Q_contatoid_contato: TIntegerField

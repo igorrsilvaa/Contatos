@@ -95,7 +95,12 @@ end;
               //condicao do botao cancelar
 procedure TFrm_cadastro.Bt_cancelarClick(Sender: TObject);
 begin
-  Q_contato.Cancel;
+  if MessageDlg('Deseja cancelar a edição?', mtConfirmation, [mbYes,mbNo], 0) = mrok then
+   begin
+     Q_contato.Cancel;
+   end
+   else
+    Abort;
 end;
 
 
@@ -142,7 +147,7 @@ begin
 end;
 
 
-  //CONDIÇAO DO BOTAO SAIR
+          //CONDIÇAO DO BOTAO SAIR
 procedure TFrm_cadastro.Bt_sairClick(Sender: TObject);
 begin
   if MessageDlg('Deseja sair do cadastro?', mtConfirmation, [mbyes,mbNo], 0)= mryes then
