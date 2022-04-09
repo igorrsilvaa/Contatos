@@ -1,4 +1,5 @@
 object Frm_cadastro: TFrm_cadastro
+  AlignWithMargins = True
   Left = 0
   Top = 0
   BorderIcons = [biSystemMenu, biMinimize]
@@ -6,7 +7,7 @@ object Frm_cadastro: TFrm_cadastro
   Caption = 'SEU CADASTRO'
   ClientHeight = 697
   ClientWidth = 1071
-  Color = 5916484
+  Color = 4798774
   Constraints.MaxHeight = 726
   Constraints.MaxWidth = 1077
   Constraints.MinHeight = 726
@@ -23,195 +24,197 @@ object Frm_cadastro: TFrm_cadastro
   TextHeight = 13
   object Label1: TLabel
     AlignWithMargins = True
-    Left = 168
-    Top = 119
-    Width = 14
-    Height = 14
-    Caption = 'ID'
+    Left = 136
+    Top = 167
+    Width = 90
+    Height = 19
+    Caption = 'ID Cliente'
     FocusControl = DBID_contato
     Font.Charset = DEFAULT_CHARSET
     Font.Color = 8125008
-    Font.Height = -12
+    Font.Height = -16
     Font.Name = 'Consolas'
     Font.Style = [fsBold]
     ParentFont = False
   end
   object Label2: TLabel
     AlignWithMargins = True
-    Left = 168
-    Top = 173
-    Width = 91
-    Height = 14
+    Left = 137
+    Top = 221
+    Width = 117
+    Height = 19
     Caption = 'Nome Completo'
     FocusControl = DBENome
     Font.Charset = DEFAULT_CHARSET
     Font.Color = 8125008
-    Font.Height = -12
+    Font.Height = -16
     Font.Name = 'Consolas'
     Font.Style = [fsBold]
     ParentFont = False
   end
   object Label3: TLabel
     AlignWithMargins = True
-    Left = 560
-    Top = 170
-    Width = 49
-    Height = 14
+    Left = 512
+    Top = 218
+    Width = 63
+    Height = 19
     Caption = 'Apelido'
     FocusControl = DBEApelido
     Font.Charset = DEFAULT_CHARSET
     Font.Color = 8125008
-    Font.Height = -12
+    Font.Height = -16
     Font.Name = 'Consolas'
     Font.Style = [fsBold]
     ParentFont = False
   end
   object Label4: TLabel
     AlignWithMargins = True
-    Left = 168
-    Top = 224
-    Width = 56
-    Height = 14
+    Left = 137
+    Top = 280
+    Width = 72
+    Height = 19
     Caption = 'Telefone'
     FocusControl = DBEtelefone
     Font.Charset = DEFAULT_CHARSET
     Font.Color = 8125008
-    Font.Height = -12
+    Font.Height = -16
     Font.Name = 'Consolas'
     Font.Style = [fsBold]
     ParentFont = False
   end
   object Label5: TLabel
     AlignWithMargins = True
-    Left = 336
-    Top = 224
-    Width = 49
-    Height = 14
+    Left = 305
+    Top = 280
+    Width = 63
+    Height = 19
     Caption = 'Celular'
     FocusControl = DBECelular
     Font.Charset = DEFAULT_CHARSET
     Font.Color = 8125008
-    Font.Height = -12
+    Font.Height = -16
     Font.Name = 'Consolas'
     Font.Style = [fsBold]
     ParentFont = False
   end
   object Label6: TLabel
     AlignWithMargins = True
-    Left = 560
-    Top = 223
-    Width = 42
-    Height = 14
+    Left = 512
+    Top = 287
+    Width = 54
+    Height = 19
     Caption = 'E-mail'
     FocusControl = DBEMail
     Font.Charset = DEFAULT_CHARSET
     Font.Color = 8125008
-    Font.Height = -12
+    Font.Height = -16
     Font.Name = 'Consolas'
     Font.Style = [fsBold]
     ParentFont = False
   end
   object Label7: TLabel
     AlignWithMargins = True
-    Left = 168
-    Top = 276
-    Width = 56
-    Height = 14
+    Left = 137
+    Top = 332
+    Width = 72
+    Height = 19
     Caption = 'Endere'#231'o'
     FocusControl = DBEEndereco
     Font.Charset = DEFAULT_CHARSET
     Font.Color = 8125008
-    Font.Height = -12
+    Font.Height = -16
     Font.Name = 'Consolas'
     Font.Style = [fsBold]
     ParentFont = False
   end
   object Label8: TLabel
     AlignWithMargins = True
-    Left = 560
-    Top = 276
-    Width = 42
-    Height = 14
+    Left = 512
+    Top = 332
+    Width = 54
+    Height = 19
     Caption = 'Bairro'
     FocusControl = DBEBairro
     Font.Charset = DEFAULT_CHARSET
     Font.Color = 8125008
-    Font.Height = -12
+    Font.Height = -16
     Font.Name = 'Consolas'
     Font.Style = [fsBold]
     ParentFont = False
   end
   object Label9: TLabel
     AlignWithMargins = True
-    Left = 168
-    Top = 335
-    Width = 42
-    Height = 14
+    Left = 258
+    Top = 388
+    Width = 54
+    Height = 19
     Caption = 'Cidade'
     FocusControl = DBECidade
     Font.Charset = DEFAULT_CHARSET
     Font.Color = 8125008
-    Font.Height = -12
+    Font.Height = -16
     Font.Name = 'Consolas'
     Font.Style = [fsBold]
     ParentFont = False
   end
   object Label10: TLabel
     AlignWithMargins = True
-    Left = 449
-    Top = 338
-    Width = 14
-    Height = 14
-    Caption = 'UF'
+    Left = 403
+    Top = 388
+    Width = 54
+    Height = 19
+    Caption = 'ESTADO'
     FocusControl = DBEditUF
     Font.Charset = DEFAULT_CHARSET
     Font.Color = 8125008
-    Font.Height = -12
+    Font.Height = -16
     Font.Name = 'Consolas'
     Font.Style = [fsBold]
     ParentFont = False
   end
   object Label11: TLabel
     AlignWithMargins = True
-    Left = 312
-    Top = 338
-    Width = 21
-    Height = 14
+    Left = 136
+    Top = 388
+    Width = 27
+    Height = 19
     Caption = 'CEP'
     FocusControl = DBECep
     Font.Charset = DEFAULT_CHARSET
     Font.Color = 8125008
-    Font.Height = -12
-    Font.Name = 'Consolas'
-    Font.Style = [fsBold]
-    ParentFont = False
-  end
-  object Label12: TLabel
-    AlignWithMargins = True
-    Left = 168
-    Top = 402
-    Width = 91
-    Height = 14
-    Caption = 'Data Cadastro'
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = 8125008
-    Font.Height = -12
+    Font.Height = -16
     Font.Name = 'Consolas'
     Font.Style = [fsBold]
     ParentFont = False
   end
   object Panel3: TPanel
-    Left = 0
-    Top = 550
-    Width = 1071
-    Height = 66
-    Align = alBottom
-    AutoSize = True
-    BiDiMode = bdLeftToRight
+    AlignWithMargins = True
+    Left = 936
+    Top = 68
+    Width = 132
+    Height = 505
+    Align = alRight
+    BevelOuter = bvNone
     Color = 3549736
-    ParentBiDiMode = False
+    Padding.Left = 4
+    Padding.Top = 4
+    Padding.Right = 4
+    Padding.Bottom = 4
     ParentBackground = False
-    TabOrder = 20
+    TabOrder = 22
+    object Label12: TLabel
+      Left = 5
+      Top = 450
+      Width = 80
+      Height = 15
+      Caption = 'Data Cadastro'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = 8125008
+      Font.Height = -12
+      Font.Name = 'Arial'
+      Font.Style = []
+      ParentFont = False
+    end
   end
   object Panel1: TPanel
     Left = 0
@@ -219,6 +222,7 @@ object Frm_cadastro: TFrm_cadastro
     Width = 1071
     Height = 65
     Align = alTop
+    BevelOuter = bvNone
     Color = 3549736
     ParentBackground = False
     TabOrder = 0
@@ -226,10 +230,11 @@ object Frm_cadastro: TFrm_cadastro
   end
   object Panel2: TPanel
     Left = 0
-    Top = 616
+    Top = 576
     Width = 1071
-    Height = 81
+    Height = 121
     Align = alBottom
+    BevelOuter = bvNone
     Color = 3549736
     ParentBackground = False
     TabOrder = 1
@@ -246,9 +251,9 @@ object Frm_cadastro: TFrm_cadastro
   end
   object DBID_contato: TDBEdit
     AlignWithMargins = True
-    Left = 168
-    Top = 135
-    Width = 134
+    Left = 136
+    Top = 184
+    Width = 65
     Height = 21
     CharCase = ecUpperCase
     Color = clWhite
@@ -264,8 +269,8 @@ object Frm_cadastro: TFrm_cadastro
   end
   object DBENome: TDBEdit
     AlignWithMargins = True
-    Left = 168
-    Top = 189
+    Left = 137
+    Top = 238
     Width = 318
     Height = 21
     CharCase = ecUpperCase
@@ -281,8 +286,8 @@ object Frm_cadastro: TFrm_cadastro
   end
   object DBEApelido: TDBEdit
     AlignWithMargins = True
-    Left = 560
-    Top = 189
+    Left = 512
+    Top = 238
     Width = 300
     Height = 21
     CharCase = ecUpperCase
@@ -298,8 +303,8 @@ object Frm_cadastro: TFrm_cadastro
   end
   object DBEtelefone: TDBEdit
     AlignWithMargins = True
-    Left = 168
-    Top = 240
+    Left = 137
+    Top = 297
     Width = 150
     Height = 21
     CharCase = ecUpperCase
@@ -315,8 +320,8 @@ object Frm_cadastro: TFrm_cadastro
   end
   object DBECelular: TDBEdit
     AlignWithMargins = True
-    Left = 336
-    Top = 240
+    Left = 305
+    Top = 297
     Width = 150
     Height = 21
     CharCase = ecUpperCase
@@ -332,8 +337,8 @@ object Frm_cadastro: TFrm_cadastro
   end
   object DBEMail: TDBEdit
     AlignWithMargins = True
-    Left = 560
-    Top = 239
+    Left = 512
+    Top = 305
     Width = 300
     Height = 21
     CharCase = ecUpperCase
@@ -349,8 +354,8 @@ object Frm_cadastro: TFrm_cadastro
   end
   object DBEEndereco: TDBEdit
     AlignWithMargins = True
-    Left = 168
-    Top = 295
+    Left = 137
+    Top = 351
     Width = 318
     Height = 21
     CharCase = ecUpperCase
@@ -366,8 +371,8 @@ object Frm_cadastro: TFrm_cadastro
   end
   object DBEBairro: TDBEdit
     AlignWithMargins = True
-    Left = 560
-    Top = 296
+    Left = 512
+    Top = 351
     Width = 300
     Height = 21
     CharCase = ecUpperCase
@@ -383,8 +388,8 @@ object Frm_cadastro: TFrm_cadastro
   end
   object DBECidade: TDBEdit
     AlignWithMargins = True
-    Left = 168
-    Top = 354
+    Left = 258
+    Top = 406
     Width = 110
     Height = 21
     CharCase = ecUpperCase
@@ -400,9 +405,9 @@ object Frm_cadastro: TFrm_cadastro
   end
   object DBEditUF: TDBEdit
     AlignWithMargins = True
-    Left = 448
-    Top = 354
-    Width = 38
+    Left = 403
+    Top = 406
+    Width = 41
     Height = 21
     CharCase = ecUpperCase
     DataField = 'uf'
@@ -417,8 +422,8 @@ object Frm_cadastro: TFrm_cadastro
   end
   object DBECep: TDBEdit
     AlignWithMargins = True
-    Left = 312
-    Top = 354
+    Left = 137
+    Top = 406
     Width = 89
     Height = 21
     CharCase = ecUpperCase
@@ -433,8 +438,8 @@ object Frm_cadastro: TFrm_cadastro
     TabOrder = 12
   end
   object Bt_novo: TBitBtn
-    Left = 142
-    Top = 571
+    Left = 954
+    Top = 136
     Width = 100
     Height = 25
     Cursor = crHandPoint
@@ -476,8 +481,8 @@ object Frm_cadastro: TFrm_cadastro
     OnClick = Bt_novoClick
   end
   object Bt_editar: TBitBtn
-    Left = 354
-    Top = 571
+    Left = 954
+    Top = 200
     Width = 100
     Height = 25
     Cursor = crHandPoint
@@ -519,8 +524,8 @@ object Frm_cadastro: TFrm_cadastro
     OnClick = Bt_editarClick
   end
   object Bt_deletar: TBitBtn
-    Left = 672
-    Top = 571
+    Left = 954
+    Top = 295
     Width = 100
     Height = 25
     Cursor = crHandPoint
@@ -562,10 +567,10 @@ object Frm_cadastro: TFrm_cadastro
     OnClick = Bt_deletarClick
   end
   object Bt_gravar: TBitBtn
-    Left = 248
-    Top = 571
+    Left = 954
+    Top = 167
     Width = 100
-    Height = 25
+    Height = 27
     Cursor = crHandPoint
     Caption = '&GRAVAR'
     Font.Charset = ANSI_CHARSET
@@ -605,8 +610,8 @@ object Frm_cadastro: TFrm_cadastro
     OnClick = Bt_gravarClick
   end
   object Bt_cancelar: TBitBtn
-    Left = 460
-    Top = 571
+    Left = 954
+    Top = 231
     Width = 100
     Height = 25
     Cursor = crHandPoint
@@ -648,10 +653,10 @@ object Frm_cadastro: TFrm_cadastro
     OnClick = Bt_cancelarClick
   end
   object Bt_atualizar: TBitBtn
-    Left = 566
-    Top = 571
+    Left = 954
+    Top = 263
     Width = 100
-    Height = 25
+    Height = 27
     Cursor = crHandPoint
     Caption = '&ATUALIZAR'
     Font.Charset = ANSI_CHARSET
@@ -691,8 +696,8 @@ object Frm_cadastro: TFrm_cadastro
     OnClick = Bt_atualizarClick
   end
   object Bt_sair: TBitBtn
-    Left = 778
-    Top = 571
+    Left = 954
+    Top = 325
     Width = 100
     Height = 25
     Cursor = crHandPoint
@@ -704,43 +709,85 @@ object Frm_cadastro: TFrm_cadastro
     Font.Style = [fsBold]
     Glyph.Data = {
       36030000424D3603000000000000360000002800000010000000100000000100
-      18000000000000030000120B0000120B00000000000000000000FF00FF1693CA
-      1693CA1693CAFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00
-      FFFF00FFFF00FFFF00FFFF00FF1693CA67E1F44CCBEA30B0DC2DABD91C9CD00B
-      8AC70684C2FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF1693CA
-      7DF3FC77EFFA6FE9F665E1F35CD9F252CEED37B7E029AADA1B9DD00D8FC91C9D
-      D1FF00FFFF00FFFF00FFFF00FF1693CA84F8FE7DF4FC75EEF86BE6F663DEF359
-      D7EF51D0ED4ACAEA45C6E948C7EA3FBFE526A6D81693CAFF00FFFF00FF1693CA
-      88FBFF82FAFE7BF3FB74EBF86BE5F662DDF258D5EF4AC6D84AC9EA45C5E945C5
-      E93ABAE31693CAFF00FFFF00FF1693CA88FBFF87FBFF82F7FC7BF0FB73EBF869
-      E3F660DAF20156033BB4B149C7EA45C5E93FBFE61693CAFF00FFFF00FF1693CA
-      88FBFF87FBFF87FBFF82F7FE7AF0FB72EAF868E2F459D5E30156034ECCED48C7
-      EA42C2E71693CAFF00FFFF00FF1693CA87FBFF87FBFF87FBFF86FBFF80F6FC78
-      EFFB6FE9F766E1F20472090156034DCCEB45C5E71693CAFF00FFFF00FF1693CA
-      8CFCFF87FBFF87FBFF3DAA7503640680F4FC78EFFB78EFFB047B0A01560354D0
-      ED4BCAE91693CAFF00FFFF00FF1693CAC5F6FBADFAFE8BDCCA046A09046A0980
-      F3F478EFFB036406047F0A0156035AD7F050CEED1693CAFF00FFFF00FF1693CA
-      1C9CD01C9CD001560324A942035A08035A0803640606910E01560303640663DE
-      F357D4EE1693CAFF00FFFF00FF1693CA58DCEE31A9990C751843E17726B44316
-      A4290A9A16036E0701560374EDFA6BE3F65DD9F01693CAFF00FFFF00FF1693CA
-      88FFFF01560337CA633EDE6D23BC4101560301560301560384EEFC7BF2FC73EB
-      F868E0F31693CAFF00FFFF00FF1693CA90FFFF53CBA3015603199C2E129F2401
-      56035AA481A6DCEF9FD7ED87D4EB8EDEF06BD8EF1693CAFF00FFFF00FF1693CA
-      70E0F08CF6FB76E3D71E84370974120156030156031290C91693CA1693CA1693
-      CA1693CA1693CAFF00FFFF00FFFF00FF1693CA1693CA1693CA1693CA1693CAFF
-      00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF}
+      18000000000000030000120B0000120B00000000000000000000FF00FFFF00FF
+      FF00FFFF00FFFF00FFFF00FFFF00FF909090808080FF00FFFF00FFFF00FFFF00
+      FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF9494949494948F8F8F91
+      9191808080FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF
+      9494949494949898989D9D9D9D9D9D9595958080809494949494949494949494
+      94949494949494FF00FFFF00FFFF00FF949494A8A8A8A3A3A3A2A2A2A1A1A198
+      9898808080D0D0D0D5D5D5DBDBDBDFDFDFDFDFDF949494FF00FFFF00FFFF00FF
+      949494ABABABA8A8A8A7A7A7A6A6A69D9D9D8080808F8F8F8E8E8E8E8E8E8686
+      86DFDFDF949494FF00FFFF00FFFF00FF949494B1B1B1ADADADACACACABABABA1
+      A1A18080809292929292929393938B8B8BDFDFDF949494FF00FFFF00FFFF00FF
+      949494B6B6B6B2B2B2B0B0B0B3B3B3A3A3A38080808F8F8F8E8E8E9090908989
+      89DFDFDF949494FF00FFFF00FFFF00FF949494BBBBBBB5B5B5C1C1C1ECECECB0
+      B0B0808080DADADAB7B7B7ADADADA1A1A1DFDFDF949494FF00FFFF00FFFF00FF
+      949494C0C0C0BABABAC4C4C4ECECECB1B1B1808080F1F1F1EFEFEFEEEEEEE8E8
+      E8DFDFDF949494FF00FFFF00FFFF00FF949494C5C5C5C1C1C1BEBEBEC0C0C0AD
+      ADAD808080EEEEEEEFEFEFEEEEEEEFEFEFDFDFDF949494FF00FFFF00FFFF00FF
+      949494CACACAC6C6C6C5C5C5C4C4C4B2B2B2808080EEEEEEEFEFEFEEEEEEEFEF
+      EFDFDFDF949494FF00FFFF00FFFF00FF949494CDCDCDCACACAC9C9C9CACACAB5
+      B5B5808080EEEEEEEFEFEFEEEEEEEFEFEFDFDFDF949494FF00FFFF00FFFF00FF
+      949494CFCFCFCCCCCCCCCCCCCCCCCCB9B9B9808080E8E8E8EFEFEFEEEEEEEFEF
+      EFDFDFDF949494FF00FFFF00FFFF00FF949494949494BBBBBBCBCBCBCECECEBD
+      BDBD808080E6E6E6ECECECEBEBEBECECECDFDFDF949494FF00FFFF00FFFF00FF
+      FF00FFFF00FF949494A4A4A4AEAEAEB1B1B18080809494949494949494949494
+      94949494949494FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF92929290
+      9090808080FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF}
     ParentFont = False
     TabOrder = 19
     OnClick = Bt_sairClick
   end
   object Dt_dataCadastro: TDateTimePicker
-    Left = 168
-    Top = 422
+    Left = 949
+    Top = 539
     Width = 110
     Height = 21
     Date = 44652.000000000000000000
     Time = 0.690644629627058700
+    TabOrder = 20
+  end
+  object btn_pesquisar: TBitBtn
+    Left = 954
+    Top = 105
+    Width = 100
+    Height = 25
+    Caption = 'PESQUISAR'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Times New Roman'
+    Font.Style = [fsBold]
+    Glyph.Data = {
+      36030000424D3603000000000000360000002800000010000000100000000100
+      1800000000000003000000000000000000000000000000000000FF00FFFF00FF
+      FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00
+      FFFF00FF1B85E0FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF
+      00FFFF00FFFF00FFFF00FFFF00FFFF00FF1B7FD96EF0FF1B85E0FF00FFFF00FF
+      FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF1B7E
+      D76EF0FF1B82D9FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF
+      00FFFF00FFFF00FFFF00FF1B7ED76FFBFF1B82D9FF00FFFF00FFFF00FFFF00FF
+      FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF1B7ED970F6FF1B7F
+      D7FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF
+      00FFFF00FF1C7CD34AD6FF1B81D7FF00FFFF00FFFF00FFFF00FFFF00FFFF00FF
+      FF00FFCA7C63D18269D18269CE7F674248503F4E583F4E581B7FD6FF00FFFF00
+      FFFF00FFFF00FFFF00FFFF00FFCE8570D2856BFFBE89FFC483FFB979FFB175DA
+      88694951588D8F91FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFD18268
+      FFDEA1FFD291FFC586FFBF7FFFB575FFBA71DC8B6B424C55FF00FFFF00FFFF00
+      FFFF00FFFF00FFFF00FFD18269FCC7A0FFE3A5FFD095FFCB8EFFC386FFBD7FFF
+      B473FFAC70D48368FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFD18269FFE9C2
+      FFE5AAFFD89EFFD397FFCA8DFFC486FFBB7CFFB774D18269FF00FFFF00FFFF00
+      FFFF00FFFF00FFFF00FFD18269FFF1CFFFFCDBFFE8B9FFD599FFD195FFCA8DFF
+      C383FFBD7DD18269FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFD18269F8D1B8
+      FFFFF5FFFCE9FFE4B2FFD89FFFCF92FFC787FFBD86D28369FF00FFFF00FFFF00
+      FFFF00FFFF00FFFF00FFFF00FFD2856DFFF4DCFFFFEEFFF6D0FFEBBEFFE8B7FF
+      E9B2D78B71C5725DFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFCE7C64
+      D1846EF9D3B7FFF1CFFFF0CBFFD7B9D78D75C97963FF00FFFF00FFFF00FFFF00
+      FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFD18269D18269D18269D18269FF
+      00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF}
+    ParentFont = False
     TabOrder = 21
+    OnClick = btn_pesquisarClick
   end
   object Conexao: TFDConnection
     Params.Strings = (
@@ -762,70 +809,83 @@ object Frm_cadastro: TFrm_cadastro
     Left = 568
     Top = 16
     object Q_contatoid_contato: TIntegerField
+      DisplayWidth = 10
       FieldName = 'id_contato'
       Origin = 'id_contato'
       ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
     end
     object Q_contatonome: TWideStringField
+      DisplayWidth = 31
       FieldName = 'nome'
       Origin = 'nome'
       Size = 100
     end
     object Q_contatoapelido: TWideStringField
+      DisplayWidth = 200
       FieldName = 'apelido'
       Origin = 'apelido'
       Size = 200
     end
     object Q_contatotelefone: TWideStringField
+      DisplayWidth = 14
       FieldName = 'telefone'
       Origin = 'telefone'
       EditMask = '!\(99\)0000-0000;0;_'
       Size = 14
     end
     object Q_contatocelular: TWideStringField
+      DisplayWidth = 14
       FieldName = 'celular'
       Origin = 'celular'
       EditMask = '!\(99\)0-0000-0000;0;_'
       Size = 14
     end
     object Q_contatoemail: TWideStringField
+      DisplayWidth = 31
       FieldName = 'email'
       Origin = 'email'
       Size = 100
     end
     object Q_contatoendereco: TWideStringField
+      DisplayWidth = 300
       FieldName = 'endereco'
       Origin = 'endereco'
       Size = 300
     end
     object Q_contatobairro: TWideStringField
+      DisplayWidth = 50
       FieldName = 'bairro'
       Origin = 'bairro'
       Size = 50
     end
     object Q_contatocidade: TWideStringField
+      DisplayWidth = 50
       FieldName = 'cidade'
       Origin = 'cidade'
       Size = 50
     end
     object Q_contatouf: TWideStringField
+      DisplayWidth = 2
       FieldName = 'uf'
       Origin = 'uf'
       FixedChar = True
       Size = 2
     end
     object Q_contatocep: TWideStringField
+      DisplayWidth = 9
       FieldName = 'cep'
       Origin = 'cep'
       Size = 9
     end
     object Q_contatodata_cadastro: TDateField
+      DisplayWidth = 11
       FieldName = 'data_cadastro'
       Origin = 'data_cadastro'
     end
   end
   object Ds_contato: TDataSource
     DataSet = Q_contato
+    OnDataChange = Ds_contatoDataChange
     Left = 440
     Top = 16
   end

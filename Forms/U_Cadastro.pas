@@ -53,7 +53,6 @@ type
     DBEditUF: TDBEdit;
     Label11: TLabel;
     DBECep: TDBEdit;
-    Label12: TLabel;
     Bt_novo: TBitBtn;
     Bt_editar: TBitBtn;
     Bt_deletar: TBitBtn;
@@ -61,9 +60,11 @@ type
     Bt_cancelar: TBitBtn;
     Bt_atualizar: TBitBtn;
     Bt_sair: TBitBtn;
-    Panel3: TPanel;
     DBNavigator1: TDBNavigator;
     Dt_dataCadastro: TDateTimePicker;
+    btn_pesquisar: TBitBtn;
+    Panel3: TPanel;
+    Label12: TLabel;
     procedure FormShow(Sender: TObject);
     procedure Bt_sairClick(Sender: TObject);
     procedure Bt_novoClick(Sender: TObject);
@@ -73,6 +74,8 @@ type
     procedure Bt_deletarClick(Sender: TObject);
     procedure Bt_atualizarClick(Sender: TObject);
     procedure Q_contatoBeforePost(DataSet: TDataSet);
+    procedure btn_pesquisarClick(Sender: TObject);
+    procedure Ds_contatoDataChange(Sender: TObject; Field: TField);
   private
     { Private declarations }
   public
@@ -84,12 +87,16 @@ var
 
 implementation
 
+uses
+  U_Pesquisa;
+
 {$R *.dfm}
 
               //condicao do botao atualizar
 procedure TFrm_cadastro.Bt_atualizarClick(Sender: TObject);
 begin
   Q_contato.Refresh;
+  MessageDlg('Registro atualizado com sucesso', mtInformation, [mbOk], 0);
 end;
 
               //condicao do botao cancelar
@@ -159,12 +166,35 @@ begin
 end;
 
 
-           //criando conexao ao entrar no formuario
+           procedure TFrm_cadastro.Ds_contatoDataChange(Sender: TObject; Field: TField);
+begin
+
+end;
+
+//criando conexao ao entrar no formuario
 procedure TFrm_cadastro.FormShow(Sender: TObject);
 begin
   Conexao.Connected := True;
   Q_contato.Open();
 
+end;
+
+procedure TFrm_cadastro.btn_pesquisarClick(Sender: TObject);
+begin
+  Frm_pesquisa := Tfrm_pesquisa.Create(self);
+  try
+    Frm_pesquisa.ShowModal;
+
+    if Frm_pesquisa.ModalResult = mrOk then
+    begin
+      Q_contato.Refresh;
+      Q_contato.Locate('ID_CONTATO',Frm_pesquisa.Q_contatoid_contato.AsInteger, []);
+    end;
+
+  finally
+    Frm_Pesquisa.Free;
+    Frm_Pesquisa := nil;
+  end;
 end;
 
 procedure TFrm_cadastro.Q_contatoBeforePost(DataSet: TDataSet);
